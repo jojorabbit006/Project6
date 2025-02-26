@@ -4,51 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palazo flyer</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="2ndstyle.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <article>
       <div class="topfooter">
-        <div><p>Call-icon +1(234) 567 890</p></div>
-        <div><p>mail-icon palazo@mail.com</p></div>
+        <div class="tpft">
+          <p class="para"><i class="fa-solid fa-phone"></i> +1(234) 567 890</p>
+          <p class="para"><i class="fa-solid fa-camera"></i> palazo@mail.com</p>
+        </div>
         <div>
-          <nav>
+          <nav class="navli">
             <ul>
-              <li>fb icon</li>
-              <li>x icon</li>
-              <li>yt icon</li>
-              <li>email icon</li>
-              <li>email icon</li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="firstcontainer">
-        <!-- set bckground image in css -->
-        <!-- Use positioning and z-index to layer the text over the palazo logo-->
-        <!-- <img src=" " alt="icon for palazo"/> -->
-        <h2 class="compname">PALAZO</h2>
-        <!--this is my comment-->
-        <nav class="navbar">
-          <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#"> Rooms</a></li>
-            <li><a href="#"> Pages</a></li>
-            <li><a href="#"> Contact</a></li>
-            <li><button>BOOK NOW</button></li>
-          </ul>
-        </nav>
-        <div class="head" >
-          <h1>Luxury Room</h1>
-          <caption>
+      <header>
+        <div class="firstcontainer">
+          <!-- <img src=" " alt="icon for palazo"/> -->
+          <h2 class="compname">PALAZO</h2>
+          <!--this is my comment-->
+          <nav class="navbar">
             <ul>
-              <li>HOME</li>
-              <li>ROOMS</li>
+              <li><a href="#" class="navbali"> Home</a></li>
+              <li><a href="#" class="navbali"> About</a></li>
+              <li><a href="#" class="navbali"> Rooms</a></li>
+              <li><a href="#" class="navbali"> Pages</a></li>
+              <li><a href="#" class="navbali"> Contact</a></li>
+              <li><a href="#" class="navbali"> Contact</a></li>
+              <li><a href="#" class="button"> Book Now</a></li>
             </ul>
-          </caption>
+          </nav>
+          <div class="head">
+            <h1>Luxury Room</h1>
+            <caption class="active">
+              <span>HOME</span>
+              <span>ROOMS</span>
+            </caption>
+          </div>
         </div>
-      </div>
+      </header>
+      <!-- <div class="dropdown">
+            <button class="dropbtn">Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> code for dropdown menu-->
       <!-- <div class="secondcontainer">
         <img src="images/bkg.jpeg" />
         <div class="subimages">

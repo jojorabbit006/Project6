@@ -1,0 +1,79 @@
+/* created a brand new css for the flyer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(250, 218, 178);
+}
+.topfooter {
+  background-color: rgb(29, 28, 28);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 34px;
+}
+.para {
+  margin: auto 15px;
+  display: inline;
+}
+.navli li {
+  display: inline;
+  margin: auto 8px;
+}
+header {
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(180, 95, 155);
+  background-image: url(images/bkg.jpeg);
+  height: 80vh;
+}
+.firstcontainer {
+  height: 80vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(240, 226, 226, 0.603),
+    rgba(240, 226, 226, 0.603)
+  );
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.compname {
+  display: grid;
+  grid-column: 2 / 3;
+  align-content: center;
+}
+.navbar li {
+  display: inline;
+}
+.navbali {
+  margin: auto 6px;
+  color: black;
+  text-decoration: none;
+}
+.navbar {
+  grid-column: 6 / 10;
+  align-content: center;
+}
+.button {
+  background: rgb(247, 176, 110);
+  color: rgb(206, 250, 252);
+  padding: 5px 10px;
+  text-decoration: none; /*removes the underline for the link*/
+  border-radius: 5pxpx;
+}
+.head {
+  margin: auto;
+  grid-column: 4 / 7;
+  grid-row: span 2;
+  align-content: center;
+}
+h1 {
+  font-size: 50px;
+}
+/* .head span {
+  text-align: center;
+/* } this is not working for some reason

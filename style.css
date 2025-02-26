@@ -6,28 +6,43 @@
 body {
   background-color: rgb(250, 218, 178);
 }
+.tpft {
+  display: flex;
+}
+
+.navli li {
+  display: inline;
+}
 .topfooter {
   background-color: rgb(0, 0, 0);
   color: aliceblue;
-  display: flex; /*position might work better than this diplay flex*/
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   height: 34px;
 }
-li {
-  display: inline;
-}
+
 .firstcontainer {
   position: relative;
   background-size: cover;
-  background-image: url(images/bkg.jpeg);
-  background-color: rgba(245, 245, 245, 0.918);
-  height: 500px;
+  background-color: rgba(255, 255, 255, 0.918);
+  height: 300px;
 }
-.compname {
+&::before {
+  content: "";
   position: absolute;
-  top: 10px;
-  left: 40px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(images/bkg.jpeg);
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.5;
+}
+
+.compname {
+  position: relative;
 }
 .navbar {
   position: absolute;
@@ -35,15 +50,43 @@ li {
   right: 20px;
   padding: 0px 70px 0px 0px;
 }
+.button {
+  background: rgb(223, 172, 78);
+  color: rgb(206, 250, 252);
+  padding: 10px 20px;
+  text-decoration: none; /*removes the underline for the link*/
+  border-radius: 20px;
+}
 h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 .head {
   position: absolute;
   top: 200px;
-  right: 50%;
-  color: white;
+  right: 500px;
 }
+
 .navbar li {
   padding: 0px 30px;
+  display: inline;
+  text-decoration: none;
+}
+.active span {
+  margin: auto 100px;
+  text-align: center;
+}
+/* * The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+*/ Dropdown button .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  /* font-family: inherit; Important for vertical align on mobile phones  */
+  margin: 0; /*Important for vertical align on mobile phones */
 }
